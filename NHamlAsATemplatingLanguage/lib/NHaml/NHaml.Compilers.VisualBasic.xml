@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NHaml.Compilers.VisualBasic</name>
+    </assembly>
+    <members>
+        <member name="T:NHaml.Compilers.VisualBasic.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_BinaryExpressionExpected">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: BinaryExpression expected but get {0}..
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_ExpressionStatementExpected">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: ExpressionStatement expected but get {0}..
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_ParserError">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: {0}.
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_StatementGreaterThenOne">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: Statement count is greater then one..
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_UnexpectedAttributeExpression">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: Expected Literal- or ReferenceExpression but get {0}..
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_UnexpectedBlockStatementCount">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: Black has no or more then one statement..
+            </summary>
+        </member>
+        <member name="P:NHaml.Compilers.VisualBasic.Properties.Resources.AttributesParse_UnexpectedExpression">
+            <summary>
+              Looks up a localized string similar to Error parsing attributes: Expected HashLiteral- or BlockExpression but get {0}..
+            </summary>
+        </member>
+    </members>
+</doc>

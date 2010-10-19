@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABB8DB89-43AE-49B9-9D1B-D10EDD69836A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NHamlAsATemplatingLanguage</RootNamespace>
+    <AssemblyName>NHamlAsATemplatingLanguage</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Scripting, Version=1.0.0.5001, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="NHaml, Version=1.5.0.2, Culture=neutral, PublicKeyToken=d603208bac452365, processorArchitecture=MSIL" />
+    <Reference Include="NHaml.Web.Mvc, Version=1.5.0.2, Culture=neutral, PublicKeyToken=d603208bac452365, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HamlTemplateFactory.cs" />
+    <Compile Include="HamlTemplate.cs" />
+    <Compile Include="TemplatingTest.cs" />
+    <Compile Include="HamlTemplateEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="email\HelloWorld.haml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\NHaml\Microsoft.Scripting.dll" />
+    <Content Include="lib\NHaml\Microsoft.Web.Mvc.dll" />
+    <Content Include="lib\NHaml\NHaml.Compilers.Boo.dll" />
+    <Content Include="lib\NHaml\NHaml.Compilers.Boo.pdb" />
+    <Content Include="lib\NHaml\NHaml.Compilers.Boo.xml" />
+    <Content Include="lib\NHaml\NHaml.Compilers.FSharp.dll" />
+    <Content Include="lib\NHaml\NHaml.Compilers.FSharp.pdb" />
+    <Content Include="lib\NHaml\NHaml.Compilers.IronRuby.dll" />
+    <Content Include="lib\NHaml\NHaml.Compilers.IronRuby.pdb" />
+    <Content Include="lib\NHaml\NHaml.Compilers.IronRuby.xml" />
+    <Content Include="lib\NHaml\NHaml.Compilers.VisualBasic.dll" />
+    <Content Include="lib\NHaml\NHaml.Compilers.VisualBasic.pdb" />
+    <Content Include="lib\NHaml\NHaml.Compilers.VisualBasic.xml" />
+    <Content Include="lib\NHaml\NHaml.dll" />
+    <Content Include="lib\NHaml\NHaml.Generator.Wpf.exe" />
+    <Content Include="lib\NHaml\NHaml.Generator.Wpf.pdb" />
+    <Content Include="lib\NHaml\NHaml.Generator.Wpf.xml" />
+    <Content Include="lib\NHaml\NHaml.pdb" />
+    <Content Include="lib\NHaml\NHaml.Web.MonoRail.dll" />
+    <Content Include="lib\NHaml\NHaml.Web.MonoRail.pdb" />
+    <Content Include="lib\NHaml\NHaml.Web.MonoRail.xml" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.Boo.dll" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.Boo.pdb" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.Boo.xml" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.dll" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.IronRuby.dll" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.IronRuby.pdb" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.IronRuby.xml" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.pdb" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.VisualBasic.dll" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.VisualBasic.pdb" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.VisualBasic.xml" />
+    <Content Include="lib\NHaml\NHaml.Web.Mvc.xml" />
+    <Content Include="lib\NHaml\NHaml.xml" />
+    <Content Include="lib\NHaml\NHaml.Xps.dll" />
+    <Content Include="lib\NHaml\NHaml.Xps.pdb" />
+    <Content Include="lib\NHaml\NHaml.Xps.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
